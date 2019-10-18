@@ -1,0 +1,13 @@
+.SideMenuBar {
+    display: grid;
+    width: 10em;
+    height: 1em;
+    border: 1px;
+    border-color: grey;
+
+}
+
+.SideMenuBar:hover {
+    border-color: green;
+    box-shadow: 2px;
+}

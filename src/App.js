@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import LandingPage from './LandingPage';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      viewport: {
+        width: 400,
+        height: 400,
+        latitude: 37.7577,
+        longitude: -122.4376,
+        zoom: 8
+      }  
+    }
+  }
+
+  render() {
+    return (
+      <React.Fragment>
+        <LandingPage  mapData={this.state.mapData}       
+                      sideMenuData={this.state.sideMenuData} 
+                      profileData={this.state.profileData} 
+                      settingsData={this.state.settingsData} />
+      </React.Fragment>
+    )
+  }
+
 }
-
-export default App;
