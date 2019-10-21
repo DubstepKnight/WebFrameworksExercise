@@ -7,7 +7,7 @@ export default function SearchBar(props) {
          <div className={styles.SearchBar}>
             <Geocoder
                     {...props.mapAccess} 
-                    onSelected={this.onSelected} 
+                    onSelected={props.onSelected} 
                     viewport={props.viewport} 
                     hideOnSelect={true}
                     queryParams={props.queryParams}

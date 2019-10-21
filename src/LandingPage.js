@@ -10,8 +10,10 @@ export default function LandingPage(props)  {
   // console.log(props)
     return (
       <React.Fragment>
-        <Mapbox data={props.mapData} />
-        <SideMenuBar data={props.sideMenuData} />
+        <div>
+          <Mapbox data={props.mapData} />
+          <SideMenuBar data={props.sideMenuData} />
+        </div>
         <Profile data={props.profileData} />
         <Settings data={props.settingsData} />
       </React.Fragment>

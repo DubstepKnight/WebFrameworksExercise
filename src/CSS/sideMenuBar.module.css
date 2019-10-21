@@ -4,10 +4,25 @@
     height: 1em;
     border: 1px;
     border-color: grey;
-
+    position: absolute;
+    top: 20px;
+    left: 40px;
 }
 
 .SideMenuBar:hover {
     border-color: green;
     box-shadow: 2px;
 }
+
+.react-geocoder {
+    border: solid black 1px;
+}
+
+.react-geocoder-results	{
+    border: solid green 2px;
+}
+
+.react-geocoder-item {
+    border: solid red 2px;
+}
+
