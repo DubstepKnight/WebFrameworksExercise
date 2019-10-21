@@ -13,9 +13,10 @@ export default function Mapbox(props) {
   //   accessToken:
   //     'pk.eyJ1IjoibnVyc3VsdGFuNGlrIiwiYSI6ImNrMXFvNWU0djAzNjgzY2xlaXI2bzExNWIifQ.N6l1DWxb_8JJ2TA09JCKsQ'
   // });
+  console.log(props.data.viewport);
     return (
       <ReactMapGL
-                {...props.mapAccess} {...props.viewport} {...props.mapStyle}
+                {...props.mapAccess} {...props.data.viewport} {...props.mapStyle}
                 onViewportChange={(newViewport) => this.setState({viewport: newViewport})}
       />    
     );

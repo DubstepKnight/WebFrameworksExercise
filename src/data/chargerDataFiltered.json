@@ -1,0 +1,548 @@
+[
+    {
+        "ID": 129726,
+        "AddressInfo": {
+            "ID": 130072,
+            "Title": "ABC Särkisalmi",
+            "AddressLine1": "Rinnekatu 1",
+            "AddressLine2": null,
+            "Town": "Särkisalmi",
+            "StateOrProvince": null,
+            "Postcode": "59310",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.6037845419238,
+            "Longitude": 29.4829909074841
+        },
+        "Connections": {
+            "ID": 181584,
+            "ConnectionTypeID": 33
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129727,
+        "AddressInfo": {
+            "ID": 130073,
+            "Title": "Neste K-Liikenneasema Linnatuuli (to south)",
+            "AddressLine1": "Helsingintie 1426",
+            "AddressLine2": null,
+            "Town": "Janakkala",
+            "StateOrProvince": "Kanta-Häme",
+            "Postcode": "12400",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 60.8542324848567,
+            "Longitude": 24.5964551665738
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    },
+    {
+        "ID": 129726,
+        "AddressInfo": {
+            "ID": 130073,
+            "Title": "ABC Särkisalmi",
+            "AddressLine1": "Rinnekatu 1",
+            "AddressLine2": null,
+            "Town": "Särkisalmi",
+            "StateOrProvince": null,
+            "Postcode": "59310",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.6037845419238,
+            "Longitude": 29.4829909074841
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129725,
+        "AddressInfo": {
+            "ID": 130071,
+            "Title": "K-Citymarket Veturi, Kouvola",
+            "AddressLine1": "Tervasharjunkatu 1",
+            "AddressLine2": null,
+            "Town": "Kuusankoski",
+            "StateOrProvince": null,
+            "Postcode": "45720",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 60.8758578849085,
+            "Longitude": 26.6537519891262
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129722,
+        "AddressInfo": {
+            "ID": 130068,
+            "Title": "Neste Aapiskukko, Pälkäne",
+            "AddressLine1": "Valtatie 12",
+            "AddressLine2": null,
+            "Town": "Pälkäne",
+            "StateOrProvince": null,
+            "Postcode": "36600",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.3472146532768,
+            "Longitude": 24.2573409480467
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129719,
+        "AddressInfo": {
+            "ID": 130065,
+            "Title": "Teboil Patalahti",
+            "AddressLine1": "Patalahdentie 16",
+            "AddressLine2": null,
+            "Town": "Jämsä",
+            "StateOrProvince": null,
+            "Postcode": "42100",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.8700689140419,
+            "Longitude": 25.2352631203976
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    },
+    {
+        "ID": 129717,
+        "AddressInfo": {
+            "ID": 130063,
+            "Title": "ABC Oritupa",
+            "AddressLine1": "Valtatie 9,  Orivesi",
+            "AddressLine2": null,
+            "Town": "Orivesi",
+            "StateOrProvince": "Tampereen seutukunta",
+            "Postcode": "35300",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.6711806671683,
+            "Longitude": 24.2860133457555
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129425,
+        "AddressInfo": {
+            "ID": 129771,
+            "Title": "Huuhkajankatu",
+            "AddressLine1": "Huuhkajankatu",
+            "AddressLine2": "Launiala",
+            "Town": "Mikkeli",
+            "StateOrProvince": "Mikkelin seutukunta",
+            "Postcode": "50190",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.6885115,
+            "Longitude": 27.2996275
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129714,
+        "AddressInfo": {
+            "ID": 130060,
+            "Title": "K-Citymarket Klaukkala",
+            "AddressLine1": "Viirintie 9",
+            "AddressLine2": null,
+            "Town": "Klaukkala",
+            "StateOrProvince": null,
+            "Postcode": "01800",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 60.3784795106246,
+            "Longitude": 24.7584569461534
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129397,
+        "AddressInfo": {
+            "ID": 129743,
+            "Title": "Lidl Marjamäki",
+            "AddressLine1": "Realparkinkatu 1",
+            "AddressLine2": null,
+            "Town": "Lempäälä",
+            "StateOrProvince": null,
+            "Postcode": "37570",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.3674610622602,
+            "Longitude": 23.8003178712979
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    },
+    {
+        "ID": 129194,
+        "AddressInfo": {
+            "ID": 129540,
+            "Title": "Hirsala Golf",
+            "AddressLine1": "Hirsalantie 215",
+            "AddressLine2": null,
+            "Town": "Jorvas",
+            "StateOrProvince": null,
+            "Postcode": "2420",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 60.118454,
+            "Longitude": 24.523133
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 129182,
+        "AddressInfo": {
+            "ID": 129528,
+            "Title": "Holiday Club Saariselkä",
+            "AddressLine1": "Saariseläntie 7",
+            "AddressLine2": null,
+            "Town": "Saariselkä",
+            "StateOrProvince": null,
+            "Postcode": "99830",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 66.001533,
+            "Longitude": 29.166434
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    },
+    {
+        "ID": 99641,
+        "AddressInfo": {
+            "ID": 99987,
+            "Title": "Lapland Hotels Oulu",
+            "AddressLine1": "Kirkkokatu 3",
+            "AddressLine2": null,
+            "Town": "Oulu",
+            "StateOrProvince": null,
+            "Postcode": "90100",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 65.015344,
+            "Longitude": 25.475991
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    },
+    {
+        "ID": 56721,        
+        "AddressInfo": {
+            "ID": 57067,
+            "Title": "Kivisydän",
+            "AddressLine1": "Hallituskatu 20",
+            "AddressLine2": null,
+            "Town": "Oulu Keskus",
+            "StateOrProvince": "Pohjois-Pohjanmaa",
+            "Postcode": "90100",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 65.01227,
+            "Longitude": 25.47637
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 31071,
+        "AddressInfo": {
+            "ID": 31417,
+            "Title": "Pilot Business Park",
+            "AddressLine1": "lentokatu 2",
+            "AddressLine2": null,
+            "Town": "Oulunsalo Keskus",
+            "StateOrProvince": "Pohjois-Pohjanmaa",
+            "Postcode": "90460",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 64.93118044,
+            "Longitude": 25.3854529
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 31076,
+        "AddressInfo": {
+            "ID": 31422,
+            "Title": "P-Stockmann / Oulu",
+            "AddressLine1": "Kirkkokatu 14",
+            "AddressLine2": null,
+            "Town": "Oulu Keskus",
+            "StateOrProvince": "Pohjois-Pohjanmaa",
+            "Postcode": "90100",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 65.01134,
+            "Longitude": 25.46974
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 24352,
+        "AddressInfo": {
+            "ID": 24698,
+            "Title": "ABC Prisma Limingantulli",
+            "AddressLine1": "Nuottasaarentie",
+            "AddressLine2": "Limingantulli",
+            "Town": "Oulu",
+            "StateOrProvince": "Pohjois-Pohjanmaa",
+            "Postcode": "90400",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 64.9941428394985,
+            "Longitude": 25.461836250206016
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    },
+    {
+        "ID": 128914,
+        "AddressInfo": {
+            "ID": 129260,
+            "Title": "Burger King Keljo",
+            "AddressLine1": "Kylmälahdentie 11",
+            "AddressLine2": "Keljo",
+            "Town": "Jyväskylä",
+            "StateOrProvince": "Jyväskylä sub-region",
+            "Postcode": "FI-40500",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 62.2170104367588,
+            "Longitude": 25.7176069085234
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 128830,
+        "AddressInfo": {
+            "ID": 129176,
+            "Title": "Lidl Marjamäki",
+            "AddressLine1": "Realparkinkatu 1",
+            "AddressLine2": null,
+            "Town": "Lempäälä",
+            "StateOrProvince": null,
+            "Postcode": "37570",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.367789,
+            "Longitude": 23.799214
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    },
+    {
+        "ID": 128827,
+        "AddressInfo": {
+            "ID": 129173,
+            "Title": "K-supermarket Säkylä",
+            "AddressLine1": "Palomiehentie 9",
+            "AddressLine2": null,
+            "Town": "Säkylä",
+            "StateOrProvince": null,
+            "Postcode": "27800",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.0454409008521,
+            "Longitude": 22.3574957545728
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 50.0
+    },
+    {
+        "ID": 128819,
+        "AddressInfo": {
+            "ID": 129165,
+            "Title": "K-Citymarket Westeri",
+            "AddressLine1": "Tesomankatu 4",
+            "AddressLine2": null,
+            "Town": "Tampere",
+            "StateOrProvince": null,
+            "Postcode": "33310",
+            "CountryID": 79,
+            "Country": {
+              "ISOCode": "FI",
+              "ContinentCode": "EU",
+              "ID": 79,
+              "Title": "Finland"
+            },
+            "Latitude": 61.5051881346708,
+            "Longitude": 23.6281921264729
+        },
+        "Connections": {
+            "ID": 183158,
+            "ConnectionTypeID": 25
+            },
+        "PowerKW": 22.0
+    }
+]

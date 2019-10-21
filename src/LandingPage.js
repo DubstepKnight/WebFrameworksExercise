@@ -1,12 +1,13 @@
 import React from 'react';
 import Mapbox from './Mapbox';
 // import styles from './Product.module.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import SideMenuBar from './SideMenuBar';
 import Profile from './Profile';
 import Settings from './Settings';
 
 export default function LandingPage(props)  {
+  // console.log(props)
     return (
       <React.Fragment>
         <Mapbox data={props.mapData} />
