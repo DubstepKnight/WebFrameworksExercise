@@ -1,0 +1,18 @@
+.react-geocoder {
+    border: solid black 1px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.react-geocoder input {
+    border: green 1px solid
+}
+
+.react-geocoder-results	{
+    border: solid green 2px;
+    background-color: white;
+}
+
+.react-geocoder-item {
+    border: solid red 2px;
+}

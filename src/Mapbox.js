@@ -14,9 +14,9 @@ export default class Mapbox extends Component {
       viewport: {
         width: "100vw",
         height: "100vh",
-        latitude: 37.7577,
-        longitude: -122.4376,
-        zoom: 8
+        latitude: 65.021545,
+        longitude: 25.469885,
+        zoom: 12
       }
     }
   }
