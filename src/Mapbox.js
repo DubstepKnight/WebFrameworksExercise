@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MapGL, { Popup, NavigationControl, FullscreenControl} from 'react-map-gl';
+import MapGL, { Marker, Popup, NavigationControl, FullscreenControl} from 'react-map-gl';
 import Charger from './Charger';
 import data from './data/chargerDataFiltered.json';
 
@@ -12,7 +12,6 @@ const token = 'pk.eyJ1IjoibnVyc3VsdGFuNGlrIiwiYSI6ImNrMXFvNWU0djAzNjgzY2xlaXI2bz
 
 export default class Mapbox extends Component {
 
-  
   constructor(props) {
     super(props);
     this.state = {
@@ -26,6 +25,8 @@ export default class Mapbox extends Component {
     }
   }
 
+  
+
     render () {
       return (
         <React.Fragment>
@@ -33,8 +34,13 @@ export default class Mapbox extends Component {
             {...this.state.viewport}
             onViewportChange={(viewport) => this.setState({viewport})} 
             mapboxApiAccessToken={token}
-          />    
-          {data.map((charger) => ( <Charger key={charger.id} {...charger} /> ))}  
+          >
+            {data.map((charger) => ( 
+              <Marker latitude={charger.Latitude} longitude={charger.Longitude} offsetLeft={-20} offsetTop={-10}>
+                <Charger key={charger.id} {...charger} /> 
+              </Marker>  
+            ))}
+          </MapGL>    
         </React.Fragment>
       );
     }

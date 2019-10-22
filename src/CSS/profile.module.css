@@ -1,11 +1,18 @@
+button {
+    /* visibility: hidden; */
+}
+
 .Profile {
     position: absolute;
-    right: 20px;
+    right: 50px;
     top: 28px;
     font-size: 1.2em;
+    display: grid;
 }
 
 .exitLogo {
     position: absolute;
-    top: 10px;
+    top: -1px;
+    right: -30px;
+    color: rgb(4, 209, 4); 
 }

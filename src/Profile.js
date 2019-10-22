@@ -8,10 +8,12 @@ export default function Profile(props) {
     console.log(props.data.username);
     if (props.data.username) {
         return(
-            <div className={styles.Profile}>
-                {props.data.username}
+            <React.Fragment>
+                <div className={styles.Profile}>
+                    {props.data.username}
                 <Logout />
-            </div>
+                </div>
+            </React.Fragment>
         )
     } else {
         return(

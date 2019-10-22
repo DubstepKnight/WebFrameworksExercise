@@ -76,7 +76,8 @@
         "Longitude": 24.2573409480467,
         "PowerKW": 50.0,
         "Status": "free",
-        "Code": "A4C1"
+        "Code": "A4C1",
+        "Type": "Fast"
     },
     {
         "ID": 129719,
