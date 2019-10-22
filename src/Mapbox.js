@@ -12,8 +12,8 @@ export default class Mapbox extends Component {
     super(props);
     this.state = {
       viewport: {
-        width: "100vw",
-        height: "100vh",
+        width: '100vw',
+        height: '100vh',
         latitude: 65.021545,
         longitude: 25.469885,
         zoom: 12

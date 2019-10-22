@@ -1,18 +1,43 @@
 .react-geocoder {
-    border: solid black 1px;
-    border-radius: 2px;
-    padding: 10px;
+    
 }
 
 .react-geocoder input {
-    border: green 1px solid
+    border-left: gray solid 3px;
+    border-right: gray solid 3px;
+    border-top: gray solid 3px;
+    border-bottom: gray solid 2px;
+    height: 1em;
+    width: 10em;
+    border-radius: 5px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding-left: 7px;
+}
+
+.react-geocoder :hover {
+    /* border: rgb(4, 209, 4) solid 1px; */
+}
+
+input:focus{
+    border: rgb(4, 209, 4) solid 3px;
+    animation-duration: 2s;
 }
 
 .react-geocoder-results	{
-    border: solid green 2px;
     background-color: white;
+    border-bottom: rgb(4, 209, 4) solid 3px;
+    border-right: rgb(4, 209, 4) solid 3px;
+    border-left: rgb(4, 209, 4) solid 3px;
+    border-top: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 .react-geocoder-item {
-    border: solid red 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
 }

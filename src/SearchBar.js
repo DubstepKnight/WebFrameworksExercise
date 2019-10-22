@@ -16,7 +16,7 @@ export default function SearchBar(props) {
                     viewport={props.viewport} 
                     hideOnSelect={true}
                     queryParams={props.queryParams}
-                    initialInputValue="Search"
+                    initialInputValue="Oulu"
                 />
         </div>
     )
