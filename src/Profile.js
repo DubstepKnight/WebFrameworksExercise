@@ -6,7 +6,7 @@ import styles from './CSS/profile.module.css';
 
 export default function Profile(props) {
     console.log(props.data.username);
-    if (props.login) {
+    if (props.data.username) {
         return(
             <div className={styles.Profile}>
                 {props.data.username}

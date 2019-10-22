@@ -1,5 +1,11 @@
 .Profile {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 28px;
+    font-size: 1.2em;
+}
+
+.exitLogo {
+    position: absolute;
+    top: 10px;
 }

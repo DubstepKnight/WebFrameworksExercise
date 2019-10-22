@@ -6,19 +6,13 @@
     border-left: gray solid 3px;
     border-right: gray solid 3px;
     border-top: gray solid 3px;
-    border-bottom: gray solid 2px;
+    border-bottom: gray solid 3px;
     height: 1em;
     width: 10em;
     border-radius: 5px;
-    /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
     font-size: 2em;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     padding-left: 7px;
-}
-
-.react-geocoder :hover {
-    /* border: rgb(4, 209, 4) solid 1px; */
 }
 
 input:focus{
@@ -27,6 +21,7 @@ input:focus{
 }
 
 .react-geocoder-results	{
+    top: 10px;
     background-color: white;
     border-bottom: rgb(4, 209, 4) solid 3px;
     border-right: rgb(4, 209, 4) solid 3px;
@@ -40,4 +35,10 @@ input:focus{
 .react-geocoder-item {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 1.2em;
+    padding: 7px;
+    border-top: 1px solid rgb(201, 196, 196)
+}
+
+.react-geocoder-item:hover {
+    background-color: rgb(201, 196, 196) ;
 }

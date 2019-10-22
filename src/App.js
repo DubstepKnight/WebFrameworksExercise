@@ -15,10 +15,6 @@ export default class App extends Component {
     }
   }
 
-  onViewportChange = () => {
-
-  }
-
   render() {
     return (
       <React.Fragment>

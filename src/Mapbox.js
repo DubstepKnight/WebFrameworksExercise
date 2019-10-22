@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import MapGL, {Marker, Popup, NavigationControl, FullscreenControl} from 'react-map-gl';
+import MapGL, { Popup, NavigationControl, FullscreenControl} from 'react-map-gl';
+import Charger from './Charger';
+import data from './data/chargerDataFiltered.json';
 
 // I decided to use mapbox as a map platform.
 // I've also decided to use a React npm package for that to make everything easier
 
+console.log(data);
+
 const token = 'pk.eyJ1IjoibnVyc3VsdGFuNGlrIiwiYSI6ImNrMXFvNWU0djAzNjgzY2xlaXI2bzExNWIifQ.N6l1DWxb_8JJ2TA09JCKsQ';
 
 export default class Mapbox extends Component {
+
   
   constructor(props) {
     super(props);
@@ -23,11 +28,14 @@ export default class Mapbox extends Component {
 
     render () {
       return (
-        <MapGL
-          {...this.state.viewport}
-          onViewportChange={(viewport) => this.setState({viewport})} 
-          mapboxApiAccessToken={token}
-        />    
+        <React.Fragment>
+          <MapGL
+            {...this.state.viewport}
+            onViewportChange={(viewport) => this.setState({viewport})} 
+            mapboxApiAccessToken={token}
+          />    
+          {data.map((charger) => ( <Charger key={charger.id} {...charger} /> ))}  
+        </React.Fragment>
       );
     }
   }
