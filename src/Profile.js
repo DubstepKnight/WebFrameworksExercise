@@ -5,7 +5,7 @@ import Register from './Register';
 import styles from './CSS/profile.module.css';
 
 export default function Profile(props) {
-    console.log(props.data.username);
+    // console.log(props.data.username);
     if (props.data.username) {
         return(
             <React.Fragment>

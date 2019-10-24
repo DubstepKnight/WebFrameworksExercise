@@ -11,7 +11,8 @@ export default function LandingPage(props)  {
       <React.Fragment>
         <div>
           <Mapbox popUpper={props.popUpper} />
-          <SideMenuBar data={props.sideMenuData} />
+          <SideMenuBar data={props.sideMenuData}
+                       profileInfo={props.profileData} />
         </div>
         <Profile data={props.profileData} />
       </React.Fragment>

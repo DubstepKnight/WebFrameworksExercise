@@ -12,7 +12,10 @@ export default function ChargerInfo(props) {
             <div> Address: {props.AddressLine1} </div> 
             <div className={styles.Code}> Code: {props.Code} </div>  
             <div> Type: {props.Type} </div> 
-            { props.Status === "Free" ? <div> Status: <span className={styles.StatusFree}> {props.Status} </span>  </div> : <div> Status: <span className={styles.StatusFree}> {props.Status} </span>  </div>  }
+            { props.Status === "Free" 
+                ? <div> Status: <span className={styles.StatusFree}> {props.Status} </span>  </div> 
+                : <div> Status: <span className={styles.StatusFree}> {props.Status} </span>  </div>  
+            }
         </div>
     )
     

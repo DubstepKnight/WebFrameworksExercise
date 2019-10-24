@@ -1,11 +1,9 @@
-button {
-    /* visibility: hidden; */
-}
-
 .Profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: absolute;
-    right: 50px;
-    top: 28px;
+    right: 0px;
+    top: 5px;
     font-size: 1.2em;
     display: grid;
 }
@@ -15,4 +13,12 @@ button {
     top: -1px;
     right: -30px;
     color: rgb(4, 209, 4); 
+}
+
+.Button {
+    background-color: white;
+    border: 1px;
+    border-radius: 4px;
+    margin: 3px;
+    font-size: 1em;
 }

@@ -9,11 +9,24 @@ export default class App extends Component {
     super(props);
     this.state = {
       profileData: {
-        username: "Nursultan"
+        username: "Nursultan",
       }
       
     }
   }
+
+  Registrator = () => {
+    
+  }
+
+  Loginer = () => {
+
+  }
+
+  Logouter = () => {
+    
+  }
+
 
   render() {
     return (

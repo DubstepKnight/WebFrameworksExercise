@@ -12,6 +12,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A2C3",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -26,6 +27,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "A4C8",
+            "Price": "0.2e/min",
             "Type": "Slow"
         },
         {
@@ -40,6 +42,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A4C9",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -54,6 +57,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A4C1",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -68,6 +72,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "A1C3",
+            "Price": "0.2e/min",
             "Type": "Slow"
         },
         {
@@ -82,6 +87,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A8C1",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -96,6 +102,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A4C3",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -110,6 +117,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A1C1",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -124,6 +132,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "B4C3",
+            "Price": "0.2e/min",
             "Type": "Slow"
         },
         {
@@ -138,6 +147,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "B4D3",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -152,6 +162,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "B4A3",
+            "Price": "0.2e/min",
             "Type": "Slow"
         },
         {
@@ -166,6 +177,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "C2F5",
+            "Price": 0,
             "Type": "Slow"
         },
         {
@@ -180,6 +192,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A44A",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -194,6 +207,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "A82C",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -208,6 +222,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "V123",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -222,6 +237,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "NH13",
+            "Price": "0.2e/min",
             "Type": "Slow"
         },
         {
@@ -236,6 +252,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "QW3E",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -250,6 +267,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "Z2XW",
+            "Price": 0,
             "Type": "Slow"
         },
         {
@@ -264,6 +282,7 @@
             "PowerKW": 50.0,
             "Status": "Free",
             "Code": "VBNT",
+            "Price": "0.18e/kWh",
             "Type": "Fast"
         },
         {
@@ -278,6 +297,7 @@
             "PowerKW": 22.0,
             "Status": "Free",
             "Code": "MC18",
+            "Price": "0.2e/min",
             "Type": "Slow"
         }
     ]

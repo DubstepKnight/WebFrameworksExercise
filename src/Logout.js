@@ -5,9 +5,9 @@ import ExitIcon from './icons/icons8-exit.svg';
 export default function Login(props) {
     return(
         <div>
-            <a onClick={props.logOut}>
-                <img className={styles.exitLogo} src={ExitIcon} width="30px" height="35px" />
-            </a>
+            <button className={styles.Button} onClick={props.logOut}>
+                Logout
+            </button>
         </div>
     )
 }
