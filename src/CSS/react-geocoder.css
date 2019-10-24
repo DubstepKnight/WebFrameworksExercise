@@ -17,7 +17,7 @@
 
 input:focus{
     border: rgb(4, 209, 4) solid 3px;
-    animation-duration: 2s;
+    border-radius: 5px;
 }
 
 .react-geocoder-results	{

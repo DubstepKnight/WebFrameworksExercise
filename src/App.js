@@ -15,15 +15,14 @@ export default class App extends Component {
     }
   }
 
-  function 
-
   render() {
     return (
       <React.Fragment>
         <LandingPage  mapData={this.state.mapData}       
                       sideMenuData={this.state.sideMenuData} 
                       profileData={this.state.profileData} 
-                      settingsData={this.state.settingsData} />
+                      settingsData={this.state.settingsData}
+        />
       </React.Fragment>
     )
   }
