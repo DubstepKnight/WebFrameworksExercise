@@ -1,21 +1,18 @@
 import React from "react";
-import Popup from 'react-map-gl';
 import styles from './CSS/sideMenuBar.module.css';
-import logoFast from './icons/charge-station-fast.svg';
-import logoSlow from './icons/charge-station-slow.svg';
-
 
 export default function ChargerInfo(props) {
 
-    // console.log(props);
-
-    function popUpper() {
-        // this.setState({})
-    }
+    console.log(props.ID);
     console.log(props);
+    // console.log(props.info.viewport);
+
     return(
-        <div>
-            
+        <div className={styles.ChargerInformation}>
+            <div> Address: {props.AddressLine1} </div> 
+            <div className={styles.Code}> Code: {props.Code} </div>  
+            <div> Type: {props.Type} </div> 
+            { props.Status === "Free" ? <div> Status: <span className={styles.StatusFree}> {props.Status} </span>  </div> : <div> Status: <span className={styles.StatusFree}> {props.Status} </span>  </div>  }
         </div>
     )
     

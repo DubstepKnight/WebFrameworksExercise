@@ -14,7 +14,6 @@ export default function LandingPage(props)  {
           <SideMenuBar data={props.sideMenuData} />
         </div>
         <Profile data={props.profileData} />
-        <Settings data={props.settingsData} />
       </React.Fragment>
     )
 }

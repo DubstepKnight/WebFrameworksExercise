@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "deck.gl": "^7.3.3",
     "mapbox-gl": "^1.4.1",
     "nodemon": "^1.19.4",
     "passport": "^0.4.0",

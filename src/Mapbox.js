@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import MapGL, { Marker, Popup, FlyToInterpolator} from 'react-map-gl';
-import Charger from './Charger';
+import MapGL, { Marker } from 'react-map-gl';
+import Geocoder from 'react-map-gl-geocoder';
+import ChargerPin from './ChargerPin';
 import data from './data/chargerDataFiltered.json';
 import ChargerInfo from './ChargerInfo';
+import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
 // I decided to use mapbox as a map platform.
 // I've also decided to use a React npm package for that to make everything easier
@@ -12,6 +14,8 @@ console.log(data);
 // console.log(popUpper);
 
 const token = 'pk.eyJ1IjoibnVyc3VsdGFuNGlrIiwiYSI6ImNrMXFvNWU0djAzNjgzY2xlaXI2bzExNWIifQ.N6l1DWxb_8JJ2TA09JCKsQ';
+
+console.log(data.chargers); 
 
 export default class Mapbox extends Component {
 
@@ -25,14 +29,43 @@ export default class Mapbox extends Component {
         longitude: 25.469885,
         zoom: 12
       },
-      popUpInfo: null
+      popUpInfo: null,
+      searchResultLayer: null
     }
   }  
-
-  popUpper = (chargerData) => {
-    console.log(chargerData.Type);
+  
+  chargerInfoShower = () => {
+    // event.preventDefault();
+    return(
+      <ChargerInfo { ...this.state.popUpInfo } />
+    )
+  }
+  
+  chargerDataSender = (chargerData) => {
+    // console.log(chargerData.Type);
     this.setState({popUpInfo: chargerData});
-    console.log(this.state.popUpInfo);
+    // console.log(this.chargerInfoShower);
+    setTimeout(() => {
+      console.log(this.state.popUpInfo)
+    }, 1);
+    this.chargerInfoShower();
+  }
+
+  mapRef = React.createRef()
+
+  handleViewportChange = (viewport) => {
+    this.setState({
+      viewport: { ...this.state.viewport, ...viewport }
+    })
+  }
+  
+  handleGeocoderViewportChange = (viewport) => {
+    const geocoderDefaultOverrides = { transitionDuration: 1000 }
+ 
+    return this.handleViewportChange({
+      ...viewport,
+      ...geocoderDefaultOverrides
+    })
   }
 
   render () {
@@ -40,22 +73,28 @@ export default class Mapbox extends Component {
         <React.Fragment>
           <MapGL
             {...this.state.viewport}
+            ref={this.mapRef}
             onViewportChange={(viewport) => this.setState({viewport})} 
             mapboxApiAccessToken={token}
-            transitionInterpolator={new FlyToInterpolator()}
           >
+            <Geocoder
+              mapRef={this.mapRef}
+              onViewportChange={this.handleGeocoderViewportChange}
+              mapboxApiAccessToken={token}
+              position="top-left"
+            />
             {data.chargers.map((charger) => ( 
               <React.Fragment>
                 <Marker 
                   latitude={charger.Latitude} 
                   longitude={charger.Longitude}  
                 >
-                  <Charger key={charger.id} oneCharger={charger} function={this.popUpper} />  
+                  <ChargerPin key={charger.id} oneCharger={charger} chargerDataSender={this.chargerDataSender} />  
                 </Marker>
               </React.Fragment>
-            ))}
-                <ChargerInfo info={this.state.popupInfo} />
+            ))}     
           </MapGL>    
+            {this.chargerInfoShower()}
         </React.Fragment>
       );
     }

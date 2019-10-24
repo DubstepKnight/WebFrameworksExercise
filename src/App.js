@@ -21,7 +21,6 @@ export default class App extends Component {
         <LandingPage  mapData={this.state.mapData}       
                       sideMenuData={this.state.sideMenuData} 
                       profileData={this.state.profileData} 
-                      settingsData={this.state.settingsData}
         />
       </React.Fragment>
     )

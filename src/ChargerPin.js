@@ -5,12 +5,12 @@ import logoFast from './icons/charge-station-fast.svg';
 import logoSlow from './icons/charge-station-slow.svg';
 
 
-export default function Charger(props) {
+export default function ChargerPin(props) {
 
     // console.log(props.oneCharger);
     // console.log(Object.keys(props.oneCharger));
     function popUpClicker(event) {
-        props.function(props.oneCharger)
+        props.chargerDataSender(props.oneCharger)
     }
 
     return(
