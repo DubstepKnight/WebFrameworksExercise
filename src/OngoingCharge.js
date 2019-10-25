@@ -1,14 +1,14 @@
 import React from "react";
 import styles from './CSS/sideMenuBar.module.css';
 
-export default function GoingCharge(props) {
+export default function OngoingCharge(props) {
 
     // console.log(props.ID);
     console.log(props);
     // console.log(props.info.viewport);
 
     
-    if (props.data.username !== null) {
+    if (props.data.email !== null) {
         return(
             <div className={styles.CodeInputAndCharging}>
                 <input className={styles.Input} placeholder={"Type code in here"} ></input>

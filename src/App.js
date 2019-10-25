@@ -18,40 +18,21 @@ export default class App extends Component {
   }
 
   Registrator = (email, password) => {
-    this.setState({ userInfo: {
+    this.setState({ profileData: {
       email, 
       password
     }});
   }
 
   Loginer = (email, password) => {
-    axios.get('http://ec2-3-84-220-144.compute-1.amazonaws.com/signIn', {
-      auth: {
-        email: email,
-        password: password
-      },
-    })
-      .then(
-        response => {
-          this.setState({
-            email: email,
-            password: password
-          })
-          axios.get(`http://ec2-3-84-220-144.compute-1.amazonaws.com/getUserId/${username}`, {
-            auth: {
-              username: username,
-              password: password
-            },
-          })
-        })
-          .then(response => {
-            this.setState({ idUser: response.data[0].idUser })
-            this.getUserHistory();
-          });
-}
+    this.setState({profileData : {
+      email,
+      password
+    }})
+  }
 
   Logouter = () => {
-    this.setState({ userInfo: {
+    this.setState({ profileData: {
       email: null,
       password: null
     }});
@@ -62,8 +43,6 @@ export default class App extends Component {
       
     }});
   }
-
-
 
   render() {
     return (

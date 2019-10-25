@@ -1,96 +1,25 @@
 const express = require('express');
 const app = express();
 const port = 4000;
-const bodyParser = require('body-parser');
-var cors = require('cors');
 const db = require('./db');
-const bcrypt = require('bcryptjs');
-const passport = require('passport');
-var Strategy = require('passport-http').BasicStrategy;
 
-const saltRounds = 4;
-app.use(bodyParser.json());
-app.use(cors())
-
-passport.use(new Strategy((email, password, cb) => {
-  db.query('SELECT userID, email, password FROM users WHERE email = ?', [email]).then(dbResults => {
-    if (dbResults.length == 0) {
-      return cb(null, false);
-    }
-    bcrypt.compare(password, dbResults[0].password).then(bcryptResult => {
-      if (bcryptResult == true) {
-        cb(null, dbResults[0]);
-      }
-      else {
-        return cb(null, false);
-      }
-    })
-  }).catch(dbError => cb(res.send(false)))
-}));
-
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Methods", "GET, PUT, PATCH, POST, DELETE");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
-
-app.get('/getData', (req, res) => {
-  db.query('SELECT * FROM stations').then(results => {
-    res.json(results)
-  })
-    .catch(() => {
-      res.sendStatus(500);
-    })
-});
-
-app.get('/getUserId/:email',
-  passport.authenticate('basic', { session: false }),
-  (req, res) => {
-    db.query('select userID from users where email = ?', [req.params.email])
-      .then(dbRes => res.send(dbRes))
-      .catch(dbEr => console.log(dbEr))
-});
-
-app.get('/signIn',
-  passport.authenticate('basic', { session: false }),
-  (req, res) => res.send(true));
-
-app.post('/signUp', (req, res) => {
-  let email = req.body.email.trim();
-  let password = req.body.password.trim();
-  if ((typeof email === "string") &&
-    (email.length > 3) &&
-    (typeof password === "string") &&
-    (password.length > 3)) {
-    bcrypt.hash(password, saltRounds).then(hash =>
-      db.query('INSERT INTO users (email, password) VALUES (?,?)', [email, hash])
-    )
-      .then(dbResults => {
-        console.log(dbResults);
-        res.sendStatus(201);
-      })
-      .catch(error => res.sendStatus(500));
-  }
-  else {
-    res.send("Incorrect email or password, both must be strings and email more than 4 long and password more than 6 characters long");
-  }
-});
+// The function below is supposed to store data from JSON file to the database. But it doesn't =(
 
 app.post('/addData', (req, res) => {
   let data = req.body;
-  console.log(data);
-  // Promise.all([
-  //   data.forEach(element => {
-  //     db.query('INSERT INTO stations (Title, AddressLine, Town, StateOrProvince, Postcode, Latitude, Longitude, PowerKW, Price, Measure, Code, Type) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [element.Title, element.AddressLine, element.Town, element.StateOrProvince, element.Postcode, element.Latitude, element.Longitude, element.PowerKW, element.Price, element.Measure, element.Code, element.Type])
-  //   })]
-  // ).then((response) => {
-  //   res.send(response);
-    // console.log(response);
-  // })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   })
+  console.log(data.length);
+  Promise.all([
+    data.forEach(element => {
+      console.log(element)
+      db.query('INSERT INTO stations (Title, AddressLine, Town, StateOrProvince, Postcode, Latitude, Longitude, PowerKW, Price, Measure, Code, Type) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)', [element.Title, element.AddressLine, element.Town, element.StateOrProvince, element.Postcode, element.Latitude, element.Longitude, element.PowerKW, element.Price, element.Measure, element.Code, element.Type])
+    })]
+  ).then((response) => {
+    res.send(response);
+    console.log(response);
+  })
+    .catch((err) => {
+      console.log(err);
+    })
 });
 
 

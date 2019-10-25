@@ -16,7 +16,7 @@ import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
 const token = 'pk.eyJ1IjoibnVyc3VsdGFuNGlrIiwiYSI6ImNrMXFvNWU0djAzNjgzY2xlaXI2bzExNWIifQ.N6l1DWxb_8JJ2TA09JCKsQ';
 
-// console.log(data.chargers); 
+console.log(data); 
 
 export default class Mapbox extends Component {
 
@@ -102,7 +102,7 @@ export default class Mapbox extends Component {
               localGeocoder={this.forwardGeocoder}
               placeholder="Search for chargers"
             />
-            {data.chargers.map((charger) => ( 
+            {data.map((charger) => ( 
               <React.Fragment>
                 <Marker 
                   latitude={charger.Latitude} 

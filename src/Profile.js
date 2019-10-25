@@ -4,15 +4,31 @@ import styles from './CSS/profile.module.css';
 
 export default function Profile(props) {
     
-    console.log(props);
+    console.log(props.profileInfo);
+
+    function register(event){
+        event.preventDefault();
+        props.Registrator(
+            event.target['email'].value,
+            event.target['password'].value
+        )
+    }
+
+    function login(event){
+        event.preventDefault();
+        props.Loginer(
+          event.target['email'].value,
+          event.target['password'].value
+        )
+    }
 
     // console.log(registrationShower);
 
-    if (props.data.username) {
+    if (props.profileInfo.email) {
         return(
             <React.Fragment>
                 <div className={styles.Profile}>
-                    {props.data.username}
+                    {props.data.email}
                     <button className={styles.Button} onClick={props.Logouter}> Logout </button>
                 </div>
             </React.Fragment>
@@ -22,7 +38,7 @@ export default function Profile(props) {
             <div className={styles.Profile}>
                 <Popup trigger={<button className={styles.Button}> Register </button>} position="bottom center" offsetX={-20}>
                     <div className={styles.SignUpForm}> 
-                        <form onSubmit={ props.Registrator }>
+                        <form onSubmit={ register }>
                             <div className={styles.Form}>
                                 Email:
                                 <input type="text"
@@ -40,7 +56,7 @@ export default function Profile(props) {
                 </Popup>
                 <Popup trigger={<button className={styles.Button}> Login </button>} position="bottom center" offsetX={-30}>
                     <div className={styles.SignUpForm}>
-                        <form onSubmit={ props.Loginer }>
+                        <form onSubmit={ login }>
                             <div className={styles.Form}>
                                 Email:
                                 <input type="text"

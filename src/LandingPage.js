@@ -18,6 +18,7 @@ export default function LandingPage(props)  {
         <Profile data={props.profileData} 
                  Loginer={props.Loginer}
                  Logouter={props.Logouter}
+                 profileInfo={props.profileData} 
                  Registrator={props.Registrator}/>
       </React.Fragment>
     )
