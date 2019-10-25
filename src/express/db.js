@@ -1,15 +1,14 @@
 let mysql = require('mysql');
 let pool = null;
-
 try {
   pool  = mysql.createPool({
     connectionLimit : 10,
     host            : 'localhost',
-    user            : 'devdemo',
-    password        : 'devdemo',
-    database        : 'userdemo'
+    user            : 'root',
+    password        : 'root',
+    database        : 'gringo'
   });
-
+  
 } catch (error) {
   console.error('Mysql pool create failed');
   console.error(error);
@@ -24,12 +23,12 @@ const api = {
         if(error) {
           reject(error)
         };
-
+    
         resolve(results);
       })
     });
-
-    return promise;
+  
+    return promise;  
   },
   closeAll: () => {
     pool.end();

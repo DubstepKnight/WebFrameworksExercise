@@ -3,6 +3,7 @@ import MapGL, { Marker } from 'react-map-gl';
 import Geocoder from 'react-map-gl-geocoder';
 import ChargerPin from './ChargerPin';
 import data from './data/chargerDataFiltered.json';
+import GeoJSONData from './data/dataInGeoJSONFormat.json'
 import ChargerInfo from './ChargerInfo';
 import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 
@@ -68,6 +69,21 @@ export default class Mapbox extends Component {
     })
   }
 
+  forwardGeocoder = (query) => {
+    let matchingFeatures = [];
+    for (var i = 0; i < GeoJSONData.features.length; i++) {
+      let feature = GeoJSONData.features[i];
+      if (feature.properties.title.toLowerCase().search(query.toLowerCase()) !== -1 || feature.properties.address.toLowerCase().search(query.toLowerCase()) !== -1) {
+        feature['place_name'] = feature.properties.title;
+        feature['place_address'] = feature.properties.address;
+        feature['place_town'] = feature.properties.town;
+        feature['center'] = feature.geometry.coordinates;
+        matchingFeatures.push(feature);
+      }
+    }
+    return matchingFeatures;
+  }
+
   render () {
     return (
         <React.Fragment>
@@ -82,6 +98,9 @@ export default class Mapbox extends Component {
               onViewportChange={this.handleGeocoderViewportChange}
               mapboxApiAccessToken={token}
               position="top-left"
+              countries="FI"
+              localGeocoder={this.forwardGeocoder}
+              placeholder="Search for chargers"
             />
             {data.chargers.map((charger) => ( 
               <React.Fragment>

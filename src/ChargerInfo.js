@@ -9,8 +9,9 @@ export default function ChargerInfo(props) {
 
     return(
         <div className={styles.ChargerInformation}>
-            <div> Address: {props.AddressLine1} </div> 
+            <div> Address: {props.AddressLine} </div> 
             <div className={styles.Code}> Code: {props.Code} </div>  
+            <div className={styles.Code}> Price: {props.Price} </div>  
             <div> Type: {props.Type} </div> 
             { 
                 props.Status === "Free" 

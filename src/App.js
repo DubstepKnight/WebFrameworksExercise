@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import LandingPage from './LandingPage';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -24,11 +25,30 @@ export default class App extends Component {
   }
 
   Loginer = (email, password) => {
-    this.setState({ userInfo: {
-      email, 
-      password
-    }});
-  }
+    axios.get('http://ec2-3-84-220-144.compute-1.amazonaws.com/signIn', {
+      auth: {
+        email: email,
+        password: password
+      },
+    })
+      .then(
+        response => {
+          this.setState({
+            email: email,
+            password: password
+          })
+          axios.get(`http://ec2-3-84-220-144.compute-1.amazonaws.com/getUserId/${username}`, {
+            auth: {
+              username: username,
+              password: password
+            },
+          })
+        })
+          .then(response => {
+            this.setState({ idUser: response.data[0].idUser })
+            this.getUserHistory();
+          });
+}
 
   Logouter = () => {
     this.setState({ userInfo: {
