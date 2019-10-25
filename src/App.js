@@ -8,24 +8,41 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      profileData: {
-        username: "Nursultan",
+      profileData: {},
+      OngoingCharge: {
+        time: "15s",
+        price: "1.6Euro"
       }
-      
     }
   }
 
-  Registrator = () => {
-    
+  Registrator = (email, password) => {
+    this.setState({ userInfo: {
+      email, 
+      password
+    }});
   }
 
-  Loginer = () => {
-
+  Loginer = (email, password) => {
+    this.setState({ userInfo: {
+      email, 
+      password
+    }});
   }
 
   Logouter = () => {
-    
+    this.setState({ userInfo: {
+      email: null,
+      password: null
+    }});
   }
+
+  OnChargeStateChanger = () => {
+    this.setState({ OngoingCharge: {
+      
+    }});
+  }
+
 
 
   render() {
@@ -34,6 +51,11 @@ export default class App extends Component {
         <LandingPage  mapData={this.state.mapData}       
                       sideMenuData={this.state.sideMenuData} 
                       profileData={this.state.profileData} 
+                      OngoingCharge={this.state.OngoingCharge}
+                      Loginer={this.Loginer}
+                      Logouter={this.Logouter}
+                      Registrator={this.Registrator}
+                      OnChargeStateChanger={this.OnChargeStateChanger}
         />
       </React.Fragment>
     )

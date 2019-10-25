@@ -4,19 +4,15 @@ import styles from './CSS/sideMenuBar.module.css';
 export default function GoingCharge(props) {
 
     // console.log(props.ID);
-    console.log(props.data);
+    console.log(props);
     // console.log(props.info.viewport);
 
     
     if (props.data.username !== null) {
         return(
             <div className={styles.CodeInputAndCharging}>
-                { 
-                    <div className={styles.GoingCharge}>
-                        <div>  </div>
-                    </div>
-                }
                 <input className={styles.Input} placeholder={"Type code in here"} ></input>
+                <button className={styles.submitButton} onClick={props}>Charge!</button>
             </div>
         )
     } else {

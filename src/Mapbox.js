@@ -9,13 +9,13 @@ import "react-map-gl-geocoder/dist/mapbox-gl-geocoder.css";
 // I decided to use mapbox as a map platform.
 // I've also decided to use a React npm package for that to make everything easier
 
-console.log(data);
+// console.log(data);
 
 // console.log(popUpper);
 
 const token = 'pk.eyJ1IjoibnVyc3VsdGFuNGlrIiwiYSI6ImNrMXFvNWU0djAzNjgzY2xlaXI2bzExNWIifQ.N6l1DWxb_8JJ2TA09JCKsQ';
 
-console.log(data.chargers); 
+// console.log(data.chargers); 
 
 export default class Mapbox extends Component {
 
@@ -48,7 +48,7 @@ export default class Mapbox extends Component {
     setTimeout(() => {
       console.log(this.state.popUpInfo)
     }, 1);
-    this.chargerInfoShower();
+    // this.chargerInfoShower();
   }
 
   mapRef = React.createRef()

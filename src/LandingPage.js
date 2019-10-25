@@ -2,7 +2,6 @@ import React from 'react';
 import Mapbox from './Mapbox';
 import SideMenuBar from './SideMenuBar';
 import Profile from './Profile';
-import Settings from './Settings';
 import styles from './CSS/LandingPage.module.css'
 
 export default function LandingPage(props)  {
@@ -12,9 +11,14 @@ export default function LandingPage(props)  {
         <div>
           <Mapbox popUpper={props.popUpper} />
           <SideMenuBar data={props.sideMenuData}
-                       profileInfo={props.profileData} />
+                       profileInfo={props.profileData} 
+                       OngoingCharge={props.OngoingCharge}
+                       OnChargeStateChanger={props.OnChargeStateChanger} />
         </div>
-        <Profile data={props.profileData} />
+        <Profile data={props.profileData} 
+                 Loginer={props.Loginer}
+                 Logouter={props.Logouter}
+                 Registrator={props.Registrator}/>
       </React.Fragment>
     )
 }
